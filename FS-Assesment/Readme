@@ -1,0 +1,13 @@
+1. We can have test cases to verify details from Database. where we can connect DB in out script and verify
+2. UI Automation has been provide on Git to be run on windows using eclipse.
+	- using browsetstck we can run code on multipler devices; for same we need to setup browserstack with all config and capabilities.
+3. Eclipse IDE for writing code and Java as language amd Selenium WebDriver as scripting language.
+	- we've used Maven for project dependencies.
+	- Framework consist of POM and Page Factory model
+	- three packages
+		* utils - consist of all methods which are going to use multipler times.
+		* pageObjects - here we've class for each page contains locator for elements which we are going to use.
+		* testCases - here we can create all the required test cases in Selenium Script
+	Note: main approch is to keep all three things seprate first, All Locators per page easy to manage. second all Java code in utils as methods, third all selenium scripting in Testcases classes.
+4. Thing not able to do
+	- Part to make project runable for all OS
